@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Telemetry Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="teams.html">Teams</a>
+    <a href="races.html">Races</a>
+    <a href="telemetry.html">Telemetry</a>
+    <a href="lap-times.html" class="active">Lap Times</a>
+</nav>
+
+<h1>Telemetry Dashboard</h1>
+
+<div class="telemetry-layout">
+
+    <!-- LEFT CONTROL PANEL -->
+    <div class="telemetry-panel">
+
+        <div class="driver-card">
+            <h3>Race</h3>
+            <select>
+                <option>Australian GP</option>
+                <option>Chinese GP</option>
+                <option>Japanese GP</option>
+				<option>Bahrain GP</option>
+                <option>Saudi Arabian GP</option>
+                <option>Miami GP</option>
+				<option>Canadian GP</option>
+                <option>Monaco GP</option>
+                <option>Barcelona-Catalunya GP</option>
+				<option>Austrian GP</option>
+                <option>British GP</option>
+                <option>Belgian GP</option>
+				<option>Hungarian GP</option>
+                <option>Dutch GP</option>
+                <option>Italy GP</option>
+				<option>Spanish GP</option>
+				<option>Azerbaijan GP</option>
+                <option>Singapore GP</option>
+                <option>United States GP</option>
+				<option>Mexican GP</option>
+				<option>Sao Paulo GP</option>
+                <option>Las Vegas GP</option>
+                <option>Qatar GP</option>
+				<option>Abu Dhabi GP</option>
+            </select>
+        </div>
+
+        <div class="driver-card">
+            <h3>Driver A</h3>
+            <select>
+                <option>Max Verstappen</option>
+                <option>Isack Hadjar</option>
+                <option>Charles Leclerc</option>
+				<option>Lewis Hamilton</option>
+                <option>Lando Norris</option>
+                <option>Oscar Piastri</option>
+				<option>Carlos Sainz</option>
+                <option>Alexander Albon</option>
+                <option>Pierre Gasly</option>
+				<option>Franco Colapinto</option>
+                <option>Liam Lawson</option>
+                <option>Arvid Lindblad</option>
+				<option>Fernando Alonso</option>
+                <option>Lance Stroll</option>
+                <option>Valtteri Bottas</option>
+				<option>Sergio Perez</option>
+                <option>Oliver Bearman</option>
+                <option>Esteban Ocon</option>
+				<option>Nico Hulkenberg</option>
+				<option>Gabriel Bortoleto</option>
+            </select>
+        </div>
+
+        <div class="driver-card">
+            <h3>Driver B</h3>
+            <select>
+                <option>Max Verstappen</option>
+                <option>Isack Hadjar</option>
+                <option>Charles Leclerc</option>
+				<option>Lewis Hamilton</option>
+                <option>Lando Norris</option>
+                <option>Oscar Piastri</option>
+				<option>Carlos Sainz</option>
+                <option>Alexander Albon</option>
+                <option>Pierre Gasly</option>
+				<option>Franco Colapinto</option>
+                <option>Liam Lawson</option>
+                <option>Arvid Lindblad</option>
+				<option>Fernando Alonso</option>
+                <option>Lance Stroll</option>
+                <option>Valtteri Bottas</option>
+				<option>Sergio Perez</option>
+                <option>Oliver Bearman</option>
+                <option>Esteban Ocon</option>
+				<option>Nico Hulkenberg</option>
+				<option>Gabriel Bortoleto</option>
+            </select>
+        </div>
+
+        <div class="driver-card">
+            <h3>Session</h3>
+            <select>
+                <option>Race</option>
+                <option>Qualifying 3</option>
+				<option>Qualifying 2</option>
+				<option>Qualifying 1</option>
+				<option>Sprint</option>
+				<option>Sprint Qualifying 3</option>
+				<option>Sprint Qualifying 2</option>
+				<option>Sprint Qualifying 1</option>
+				<option>Practice 3</option>
+                <option>Practice 1</option>
+                <option>Practice 2</option>
+            </select>
+        </div>
+
+        <button class="telemetry-btn" onclick="loadLaps()">
+    Load Lap Times
+		</button>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="telemetry-graph">
+
+        <!-- GRAPH CARD -->
+        <div class="driver-card">
+            <h2>Speed Trace</h2>
+            <canvas id="telemetryChart"></canvas>
+        </div>
+
+        <div class="driver-card">
+    <h2>Lap Times</h2>
+    <canvas id="lapChart"></canvas>
+		</div>
+
+<!-- TIMING TOWER -->
+<div class="driver-card">
+    <h2>Timing Tower</h2>
+    <div id="timing-tower">
+        Loading...
+    </div>
+</div>
+
+<!-- TRACK MAP -->
+<div class="driver-card">
+    <h2>Track Map</h2>
+    <canvas id="trackMap" width="800" height="500"></canvas>
+</div>
+
+    </div>
+
+</div>
+
+<!-- JS FILE -->
+<script src="telemetry.js"></script>
+
+</body>
+
+</html>
