@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Australian Grand Prix 2026</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../drivers.html">Drivers</a>
+    <a href="../teams.html">Teams</a>
+    <a href="../races.html">Races</a>
+    <a href="../telemetry.html">Telemetry</a>
+    <a href="../lap-times.html">Lap Times</a>
+</nav>
+
+<h1>🇦🇺 Australian Grand Prix 2026</h1>
+
+<div class="track-card">
+
+    <img src="../circuits/melbourne.png" class="track-img">
+
+    <h2>Albert Park Circuit</h2>
+
+    <p><strong>Location:</strong> Melbourne, Australia</p>
+    <p><strong>Length:</strong> 5.278 km</p>
+    <p><strong>Laps:</strong> 58</p>
+
+</div>
+
+<div class="track-card">
+
+    <h2>Weekend Summary</h2>
+
+    <p>🥇 Winner: Charles Leclerc</p>
+
+    <p>⏱ Pole Position: Max Verstappen (1:14.321)</p>
+
+    <p>⚡ Fastest Lap: Lando Norris (Lap 52, 1:18.554)</p>
+
+    <p>🏁 Winning Time: 1h 31m 22.847s</p>
+
+</div>
+
+<div class="track-card">
+
+    <h2>Race Classification</h2>
+
+    <table class="results-table">
+
+        <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Gap / Status</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Charles Leclerc</td>
+            <td>Ferrari</td>
+            <td>1h 31m 22.847s</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Oscar Piastri</td>
+            <td>McLaren</td>
+            <td>+10.254s</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Lando Norris</td>
+            <td>McLaren</td>
+            <td>+15.662s</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>George Russell</td>
+            <td>Mercedes</td>
+            <td>+22.318s</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Max Verstappen</td>
+            <td>Red Bull</td>
+            <td>+27.001s</td>
+        </tr>
+
+        <tr class="dnf">
+            <td>DNF</td>
+            <td>Fernando Alonso</td>
+            <td>Aston Martin</td>
+            <td>Engine Failure</td>
+        </tr>
+
+        <tr class="dns">
+            <td>DNS</td>
+            <td>Valtteri Bottas</td>
+            <td>Cadillac</td>
+            <td>Mechanical Issue</td>
+        </tr>
+
+        <tr class="dsq">
+            <td>DSQ</td>
+            <td>Sergio Perez</td>
+            <td>Cadillac</td>
+            <td>Technical Infringement</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

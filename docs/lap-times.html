@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lap Times</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="drivers.html" class="active">Drivers</a>
+    <a href="teams.html" class="active">Teams</a>
+    <a href="races.html" class="active">Races</a>
+    <a href="telemetry.html" class="active">Telemetry</a>
+    <a href="lap-times.html" class="active">Lap Times</a>
+</nav>
+
+<h1>Lap Times</h1>
+
+<div class="driver-card">
+
+    <h2>Live Timing</h2>
+
+    <table id="lapTable">
+        <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Lap Time</th>
+            <th>Gap</th>
+            <th>S1</th>
+            <th>S2</th>
+            <th>S3</th>
+            <th>Best Lap</th>
+        </tr>
+    </table>
+
+</div>
+
+<button class="telemetry-btn" onclick="loadLapTimes()">
+    Load Lap Times
+</button>
+
+<script src="lap-times.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0f;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff1e1e;
+}
+
+.driver-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.driver-card {
+    background: #15151e;
+    border-radius: 12px;
+    padding: 15px;
+    border-left: 4px solid #ff1e1e;
+    transition: transform 0.2s ease;
+}
+
+.driver-card:hover {
+    transform: scale(1.05);
+}
+
+.driver-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.driver-code {
+    font-size: 20px;
+    color: #ff1e1e;
+    margin-top: 5px;
+}
+
+.driver-info {
+    font-size: 12px;
+    opacity: 0.7;
+}
+nav {
+    background: #15151e;
+    padding: 15px 20px;
+    border-bottom: 3px solid #ff1e1e;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: #ff1e1e;
+    color: white;
+}
+body {
+    background: #0b0b0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    background: #15151e;
+    padding: 15px 20px;
+    border-bottom: 3px solid #ff1e1e;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #ff1e1e;
+}
+
+.active {
+    background: #ff1e1e;
+}
+
+.driver-card {
+    background: #15151e;
+    border-left: 4px solid #ff1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.telemetry-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* LEFT PANEL */
+.telemetry-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* RIGHT PANEL */
+.telemetry-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BUTTON */
+.telemetry-btn {
+    background: #ff1e1e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.telemetry-btn:hover {
+    background: #ff3b3b;
+}
+
+/* SELECT DROPDOWNS */
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+th {
+    color: #ff1e1e;
+}
+
+tr:hover {
+    background: #1a1a1a;
+}
+#timing-tower {
+    font-family: monospace;
+    width: 300px;
+}
+
+.tower-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-bottom: 1px solid #333;
+    background: #111;
+    color: white;
+}
+
+.tower-row:nth-child(1) {
+    background: gold;
+    color: black;
+}
+
+.pos {
+    width: 20px;
+}
+
+.drv {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.gap {
+    text-align: right;
+}
+.home-container {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+    font-family: Arial;
+}
+
+.home-buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #e10600; /* F1 red */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ff2a2a;
+}
+body {
+    background-image: url("car.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+body {
+    margin: 0;
+    background: url("car.jpg") center/cover no-repeat;
+    color: white;
+    font-family: Arial;
+}
+
+/* dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -2;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("car.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.track-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+.track-card:hover {
+    transform: scale(1.03);
+    border-color: #e10600;
+}
+.track-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.driver-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.driver-link:hover .driver-card {
+    transform: scale(1.03);
+}
+.team-car {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.track-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.track-link:hover .track-card {
+    transform: scale(1.03);
+}
+.track-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.results-table th {
+    background: #222;
+}
+
+.dnf {
+    color: orange;
+    font-weight: bold;
+}
+
+.dns {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.dsq {
+    color: red;
+    font-weight: bold;
+}

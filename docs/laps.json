@@ -1,0 +1,6 @@
+[
+  { "Driver": "VER", "Gap": 0.0 },
+  { "Driver": "NOR", "Gap": 1.2 },
+  { "Driver": "LEC", "Gap": 2.4 },
+  { "Driver": "PIA", "Gap": 4.1 }
+]
