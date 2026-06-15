@@ -201,3 +201,146 @@ tr:hover {
 .gap {
     text-align: right;
 }
+.home-container {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+    font-family: Arial;
+}
+
+.home-buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #e10600; /* F1 red */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ff2a2a;
+}
+body {
+    background-image: url("car.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+body {
+    margin: 0;
+    background: url("car.jpg") center/cover no-repeat;
+    color: white;
+    font-family: Arial;
+}
+
+/* dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -2;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("car.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.track-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+.track-card:hover {
+    transform: scale(1.03);
+    border-color: #e10600;
+}
+.track-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.driver-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.driver-link:hover .driver-card {
+    transform: scale(1.03);
+}
+.team-car {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.track-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.track-link:hover .track-card {
+    transform: scale(1.03);
+}
+.track-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.results-table th {
+    background: #222;
+}
+
+.dnf {
+    color: orange;
+    font-weight: bold;
+}
+
+.dns {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.dsq {
+    color: red;
+    font-weight: bold;
+}
