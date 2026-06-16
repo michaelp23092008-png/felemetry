@@ -366,3 +366,10 @@ body {
 .driver-card:hover {
     transform: scale(1.03);
 }
+.driver-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
