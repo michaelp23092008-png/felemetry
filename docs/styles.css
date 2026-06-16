@@ -344,3 +344,25 @@ body {
     color: red;
     font-weight: bold;
 }
+.driver-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.driver-card-link {
+    text-decoration: none;
+    color: white;
+}
+
+.driver-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.driver-card:hover {
+    transform: scale(1.03);
+}
